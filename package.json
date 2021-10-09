@@ -6,6 +6,7 @@
   "scripts": {
     "task1": "nodemon task1.mjs",
     "task2": "nodemon task2.mjs",
+    "task3": "babel --presets es2015 task3.mjs -d dist && nodemon  dist/task3.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,9 @@
   },
   "homepage": "https://github.com/sergeyShabeko/NodeJS_2021Q3#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "csvtojson": "^2.0.10",
     "nodemon": "^2.0.13"
   }
